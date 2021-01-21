@@ -16,6 +16,7 @@ export const DrawerStyles = styled.div`
     top: 0;
     cursor: pointer;
     visibility: visible;
+    background: white;
   }
   .drawer-items {
     overflow: hidden;
@@ -38,7 +39,6 @@ export const DrawerStyles = styled.div`
   .overflow {
     position: fixed;
     background: #06000061;
-    transition: 300ms ease-in-out;
     right: 0;
     top: 0;
     left: 0;

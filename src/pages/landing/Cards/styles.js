@@ -12,7 +12,7 @@ export const CardStyles = styled.section`
         .icon {
           padding: 10px;
         }
-        h5 {
+        h4 {
           margin: 10px 0;
         }
       }

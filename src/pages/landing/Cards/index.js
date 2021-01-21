@@ -4,7 +4,7 @@ import { Flex, PictureFrame } from "../../../components/Box/styles";
 import { IoIosPeople } from "react-icons/io";
 import { MdNotificationsActive } from "react-icons/md";
 import { AiTwotoneNotification } from "react-icons/ai";
-import { Header5, Paragraph } from "../../../components/Fonts/styles";
+import { Header4, Paragraph } from "../../../components/Fonts/styles";
 
 const Cards = () => {
   let cards = [
@@ -54,9 +54,9 @@ const Cards = () => {
               >
                 {icon}
               </PictureFrame>
-              <Header5 bold color="#333232">
+              <Header4 bold color="#333232">
                 {name}
-              </Header5>
+              </Header4>
               <Paragraph>{detail}</Paragraph>
             </Flex>
             <Flex bgColor={bgColor} width="auto" />
