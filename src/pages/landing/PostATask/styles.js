@@ -13,6 +13,7 @@ export const PostATaskStyles = styled.div`
   .main-container {
     @media (max-width: 750px) {
       grid-template-columns: 1fr;
+      align-content: center
     }
   }
   .left-container {

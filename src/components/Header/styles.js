@@ -30,6 +30,9 @@ export const HeaderStyles = styled.header`
         stroke: #818e94;
       }
     }
+    @media (max-width: 600px) {
+    width: auto
+    }
   }
 
   .btn-container {

@@ -13,6 +13,7 @@ export const Flex = styled("div")`
   max-width: ${({ max, width }) => max && width};
   max-height: ${({ max, height }) => max && height};
   background-color: ${({ bgColor }) => bgColor || "transparent"};
+  
 `;
 
 export const Grid = styled("div")`
