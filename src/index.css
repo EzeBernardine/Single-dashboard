@@ -1,0 +1,30 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: normal normal normal Poppins;
+  /* overflow-x: hidden; */
+}
+* {
+  box-sizing: border-box;
+}
+
+input {
+  border: none;
+  background: white;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+button {
+  border: none;
+}
+
+p,
+small,
+span {
+  line-height: 1.3rem;
+  margin: 0;
+}
