@@ -48,7 +48,12 @@ const Header = () => {
           </nav>
 
           <div className="profile-image-container">
-            <PictureFrame objFit="contain">
+            <PictureFrame
+              objFit="contain"
+              width="30px"
+              height="30px"
+              bgColor="#f1f1f7"
+            >
               <img src={ProfilePics} alt="" />
             </PictureFrame>
           </div>

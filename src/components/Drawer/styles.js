@@ -7,19 +7,46 @@ export const DrawerStyles = styled.div`
   max-width: 50px;
   width: 50px;
   z-index: 11;
+  @media (max-width: 600px) {
+    visibility: ${({ drawer }) => (drawer ? "visible !important" : "hidden")};
+  }
 
   .menu-Icon {
     position: absolute;
     top: 0;
-    background: white;
+    cursor: pointer;
+    visibility: visible;
   }
   .drawer-items {
-    margin-top: 100px;
+    overflow: hidden;
+    padding-top: 100px;
+    height: 100%;
+    transition: 300ms ease-in-out;
+    background: white;
     @media (max-width: 600px) {
-      display: none;
+      width: ${({ drawer }) => (drawer ? "50px !important" : "0")};
     }
     .icon-image {
       border-radius: 0;
+    }
+    li:hover {
+      background: #ff52421a;
+      cursor: pointer
+    }
+  }
+
+  .overflow {
+    position: fixed;
+    background: #06000061;
+    transition: 300ms ease-in-out;
+    right: 0;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    margin: 0 0 0 auto;
+    @media (min-width: 600px) {
+      display: none;
     }
   }
 `;

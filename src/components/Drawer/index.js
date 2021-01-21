@@ -1,29 +1,43 @@
-import React from "react";
-import { DrawerStyles } from "./styles";
-import { AiOutlineMenu } from "react-icons/ai";
+import React, { useState } from "react";
+import { DrawerStyles } from "./styles"; 
 import { drawerItems } from "./drawerItems";
 import { Flex, PictureFrame } from "../Box/styles";
+import MenuIcon from './MenuIcon'
 
 const Header = () => {
+  const [drawer, setDrawer] = useState(false);
+  const handleOpenDrawer = () => {
+    setDrawer(!drawer);
+    console.log(drawer);
+  };
   return (
-    <DrawerStyles>
-      <Flex className="menu-Icon" height="60px">
-        <div>
-          <AiOutlineMenu />
+    <DrawerStyles drawer={drawer}>
+      <Flex
+        className="menu-Icon"
+        height="60px"
+        width="50px"
+      >
+        <div> 
+          <MenuIcon
+            click={handleOpenDrawer}
+            showMenuDropdown={drawer}
+            color="#818E94"
+          />
         </div>
       </Flex>
 
       <div className="drawer-items">
+        <div className="overflow" onClick={() => handleOpenDrawer()} />
         <ul>
           {drawerItems.map(({ logo }) => (
             <li>
-              <Flex width="50px" height="50px">
+              <Flex width="100%" height="50px">
                 <PictureFrame
                   objFit="contain"
                   id="d"
                   width="20px"
                   height="20px"
-                  className='drawer-icon icon-image'
+                  className="drawer-icon icon-image"
                 >
                   {logo}
                 </PictureFrame>
