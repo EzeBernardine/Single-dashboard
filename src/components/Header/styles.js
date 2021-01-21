@@ -38,7 +38,7 @@ export const HeaderStyles = styled.header`
   .btn-container {
     margin: 0 5%;
     @media (max-width: 950px) {
-      margin: 0;
+      margin: 0 0 0 5%;
     }
   }
 
