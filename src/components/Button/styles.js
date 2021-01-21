@@ -13,7 +13,7 @@ export const ButtonStyles = styled.button`
   }
   @media (max-width: 950px) {
     & {
-      font-size: 12px;
+      padding: 3px 10px;
     }
   }
 `;

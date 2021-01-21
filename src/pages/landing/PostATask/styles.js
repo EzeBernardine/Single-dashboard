@@ -46,7 +46,8 @@ export const PostATaskStyles = styled.div`
     min-width: 70%;
     @media (max-width: 1100px) {
       padding: 30px 0 0 0;
-      min-width: 100%;
+      width: 100%
+      /* min-width: 100%; */
     }
     .icon-wrap {
       padding: 10px;

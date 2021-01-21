@@ -6,9 +6,12 @@ export const DrawerStyles = styled.div`
   bottom: 0;
   max-width: 50px;
   width: 50px;
+  z-index: 11;
+
   .menu-Icon {
     position: absolute;
     top: 0;
+    background: white;
   }
   .drawer-items {
     margin-top: 100px;
@@ -16,7 +19,7 @@ export const DrawerStyles = styled.div`
       display: none;
     }
     .icon-image {
-        border-radius: 0;
+      border-radius: 0;
     }
   }
 `;
