@@ -1,23 +1,17 @@
 import React, { useState } from "react";
-import { DrawerStyles } from "./styles"; 
+import { DrawerStyles } from "./styles";
 import { drawerItems } from "./drawerItems";
 import { Flex, PictureFrame } from "../Box/styles";
-import MenuIcon from './MenuIcon'
+import MenuIcon from "./MenuIcon";
 
 const Header = () => {
   const [drawer, setDrawer] = useState(false);
-  const handleOpenDrawer = () => {
-    setDrawer(!drawer);
-    console.log(drawer);
-  };
+  const handleOpenDrawer = () => setDrawer(!drawer);
+
   return (
     <DrawerStyles drawer={drawer}>
-      <Flex
-        className="menu-Icon"
-        height="60px"
-        width="50px"
-      >
-        <div> 
+      <Flex className="menu-Icon" height="60px" width="50px">
+        <div>
           <MenuIcon
             click={handleOpenDrawer}
             showMenuDropdown={drawer}

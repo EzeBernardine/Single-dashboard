@@ -13,7 +13,7 @@ export const PostATaskStyles = styled.div`
   .main-container {
     @media (max-width: 750px) {
       grid-template-columns: 1fr;
-      align-content: center
+      align-content: center;
     }
   }
   .left-container {
@@ -46,7 +46,7 @@ export const PostATaskStyles = styled.div`
     min-width: 70%;
     @media (max-width: 1100px) {
       padding: 30px 0 0 0;
-      width: 100%
+      width: 100%;
       /* min-width: 100%; */
     }
     .icon-wrap {
@@ -68,6 +68,9 @@ export const PostATaskStyles = styled.div`
     @media (max-width: 750px) {
       width: max-content;
       order: -1;
+    }
+    @media (max-width: 600px) {
+      width: 100%;
     }
     .edit {
       position: absolute;

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { HeaderStyles } from "./styles";
 import Input from "../../components/Input";
 import Button from "../../components/Button";
@@ -8,8 +8,10 @@ import { PictureFrame, Flex } from "../../components/Box/styles";
 import ProfilePics from "../../assets/ladyB.png";
 
 const Header = () => {
+  const [menu, setMenu] = useState(undefined);
+  const handleOpenMenu = () => setMenu(!menu);
   return (
-    <HeaderStyles>
+    <HeaderStyles menu={menu}>
       <Flex
         justifyContent="space-between"
         className="header-container"
@@ -64,10 +66,20 @@ const Header = () => {
             </div>
           </div>
 
-          <div className="menu-Icon">
+          <div className="menu-Icon" onClick={() => handleOpenMenu()}>
             <div>
               <AiOutlineMenu />
             </div>
+            <Flex className="dropdown-menu">
+              <ul>
+                <li className="list-itme">Browse tasks</li>
+                <li className="list-itme">My Tasks</li>
+                <li className="list-itme">Profile</li>
+                <li className="list-itme">Help</li>
+                <li className="list-itme">Notifications</li>
+                <li className="list-itme">Messages</li>
+              </ul>
+            </Flex>
           </div>
         </Flex>
       </Flex>

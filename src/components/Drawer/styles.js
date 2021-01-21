@@ -10,13 +10,14 @@ export const DrawerStyles = styled.div`
   @media (max-width: 600px) {
     visibility: ${({ drawer }) => (drawer ? "visible !important" : "hidden")};
   }
-
+  
   .menu-Icon {
     position: absolute;
     top: 0;
     cursor: pointer;
     visibility: visible;
     background: white;
+  
   }
   .drawer-items {
     overflow: hidden;
@@ -24,6 +25,7 @@ export const DrawerStyles = styled.div`
     height: 100%;
     transition: 300ms ease-in-out;
     background: white;
+
     @media (max-width: 600px) {
       width: ${({ drawer }) => (drawer ? "50px !important" : "0")};
     }
@@ -40,7 +42,7 @@ export const DrawerStyles = styled.div`
     position: fixed;
     background: #06000061;
     right: 0;
-    top: 0;
+    top: 60px;
     left: 0;
     bottom: 0;
     z-index: -1;

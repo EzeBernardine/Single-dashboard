@@ -9,8 +9,14 @@ export const ActivityStyles = styled.section`
     text-align: center;
     .card-details {
       padding: 50px;
+      @media (max-width: 950px) {
+        width: 100%;
+      }
       .icon {
         padding: 10px;
+      }
+      h4 {
+        margin: 15px 0;
       }
     }
 
@@ -35,9 +41,9 @@ export const ActivityStyles = styled.section`
           }
         }
         &:hover {
-            box-shadow: 0 2px 5px -2px #c4c8ca;
-            transform: translateY(-2px);
-            transition: 100ms linear;
+          box-shadow: 0 2px 5px -2px #c4c8ca;
+          transform: translateY(-2px);
+          transition: 100ms linear;
         }
       }
     }

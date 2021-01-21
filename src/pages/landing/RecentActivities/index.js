@@ -5,7 +5,7 @@ import { IoMdPerson } from "react-icons/io";
 import { BiTimer } from "react-icons/bi";
 import {
   Span,
-  Header5,
+  Header4,
   Header6,
   Paragraph,
 } from "../../../components/Fonts/styles";
@@ -86,9 +86,9 @@ const RecentActivities = () => {
           >
             <BiTimer />
           </PictureFrame>
-          <Header5 bold color="#333232">
+          <Header4 bold color="#333232">
             Recent Activities
-          </Header5>
+          </Header4>
           <Paragraph>
             Lorem ipsum dolor sit amet consectetur, adipisicing elit.
             Laboriosam, !
