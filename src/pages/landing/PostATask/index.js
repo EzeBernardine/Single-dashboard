@@ -71,7 +71,6 @@ const PostATask = () => {
 
           <PictureFrame
             className="edit"
-            width="max-content"
             bgColor="white"
             height="30px"
             width="30px"

@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from "react";
 import Chart from "chart.js";
 import { ChartStyles } from "./styles";
 
-export const CustomeChart = ({}) => {
+export const CustomeChart = () => {
   const ctx = useRef();
 
   useEffect(() => {
