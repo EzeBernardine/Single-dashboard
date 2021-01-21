@@ -23,8 +23,8 @@ const Header = () => {
       <div className="drawer-items">
         <div className="overflow" onClick={() => handleOpenDrawer()} />
         <ul>
-          {drawerItems.map(({ logo }) => (
-            <li>
+          {drawerItems.map(({ logo, key }) => (
+            <li key={key}>
               <Flex width="100%" height="50px">
                 <PictureFrame
                   objFit="contain"

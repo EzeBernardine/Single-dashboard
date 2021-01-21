@@ -14,6 +14,7 @@ const Cards = () => {
       color: "#b78104",
       bgColor: "#f4cc6d2e",
       detail: "+2 in the last hour",
+      key: 1,
     },
     {
       name: "Refer a friend",
@@ -21,6 +22,7 @@ const Cards = () => {
       color: "blue",
       bgColor: "#75cef04d",
       detail: "lorem  ipsum",
+      key: 2,
     },
     {
       name: "Announcement",
@@ -28,6 +30,7 @@ const Cards = () => {
       color: "#04b004",
       bgColor: "#defbde",
       detail: "lorem  ipsum",
+      key: 3,
     },
   ];
   return (
@@ -37,8 +40,13 @@ const Cards = () => {
         justifyContent="space-between"
         alignItems="stretch"
       >
-        {cards.map(({ name, icon, color, bgColor, detail }) => (
-          <Flex className="card" width="calc(50% - 10px)" alignItems="stretch">
+        {cards.map(({ name, icon, color, bgColor, detail, key }) => (
+          <Flex
+            className="card"
+            width="calc(50% - 10px)"
+            alignItems="stretch"
+            key={key}
+          >
             <Flex
               width="300px"
               bgColor="white"

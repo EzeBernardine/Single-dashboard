@@ -19,6 +19,7 @@ const RecentActivities = () => {
       ticker: 2,
       offer: 1,
       online: true,
+      key: 1,
     },
     {
       name: "Name",
@@ -27,6 +28,7 @@ const RecentActivities = () => {
       ticker: 2,
       offer: 1,
       online: true,
+      key: 2,
     },
     {
       name: "Name",
@@ -35,6 +37,7 @@ const RecentActivities = () => {
       ticker: 2,
       offer: 1,
       online: true,
+      key: 3,
     },
     {
       name: "Name",
@@ -43,6 +46,7 @@ const RecentActivities = () => {
       ticker: 2,
       offer: 1,
       online: true,
+      key: 4,
     },
     {
       name: "Name",
@@ -51,6 +55,7 @@ const RecentActivities = () => {
       ticker: 2,
       offer: 1,
       online: true,
+      key: 5,
     },
     {
       name: "Name",
@@ -59,6 +64,7 @@ const RecentActivities = () => {
       ticker: 2,
       offer: 1,
       online: true,
+      key: 6,
     },
   ];
   return (
@@ -102,12 +108,13 @@ const RecentActivities = () => {
           alignItems="stretch"
           width="auto"
         >
-          {activites.map(({ name, ticker, offer, time, icon, online }) => (
+          {activites.map(({ name, ticker, offer, time, icon, online, key }) => (
             <Flex
               className="activity-container"
               width="300px"
               min
               bgColor="white"
+              key={key}
             >
               <Flex justifyContent="space-between">
                 <Flex width="max-content">

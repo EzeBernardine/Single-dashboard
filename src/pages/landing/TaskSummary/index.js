@@ -10,26 +10,32 @@ let summaryData = [
   {
     name: "Draft",
     value: null,
+    key: 1,
   },
   {
     name: "Open for offer",
     value: null,
+    key: 2,
   },
   {
     name: "Assigned",
     value: 1,
+    key: 3,
   },
   {
     name: "Awaiting payment",
     value: 1,
+    key: 4,
   },
   {
     name: "Reviews",
     value: null,
+    key: 5,
   },
   {
     name: "Completed",
     value: 1,
+    key: 6,
   },
 ];
 const TaskSummary = () => {
@@ -55,8 +61,8 @@ const TaskSummary = () => {
 
           <div className="summary-list">
             <ul>
-              {summaryData.map(({ name, value }) => (
-                <li>
+              {summaryData.map(({ name, value, key }) => (
+                <li key={key}>
                   <Flex justifyContent="space-between">
                     <Span>{name}</Span>
                     {value ? <Span>+ {value}</Span> : null}

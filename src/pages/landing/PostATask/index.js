@@ -47,7 +47,7 @@ const PostATask = () => {
             gridCol="repeat(auto-fill, 70px)"
           >
             {icons.map(({ name, icon }) => (
-              <Flex width="auto" flexDir="column">
+              <Flex width="auto" flexDir="column" key={name + index}>
                 <PictureFrame
                   className="icon-wrap"
                   bgColor="#df4c0614"
